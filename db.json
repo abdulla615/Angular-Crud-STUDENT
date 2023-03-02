@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Abdulla moulana",
+      "email": "sportsvibes64@gmail.com",
+      "mobile": 769351615,
+      "city": "weligama"
+    },
+    {
+      "id": 2,
+      "name": "uhfguygfuy",
+      "email": "sportsvibes64@gmail.com",
+      "mobile": 769351615,
+      "city": "weligama"
+    },
+    {
+      "id": 3,
+      "name": "ahmed",
+      "email": "ahdz@gmail.com",
+      "mobile": 123654987,
+      "city": "matara"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "signup": {
+    "email": "ahd@gmail.com",
+    "password": 123456
+  },
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="cool-md-6">
+            <div class="card">
+<div class="text-center">
+    <h1>Student Signup</h1>
+    <strong>Signup system!..</strong>
+ </div>
+   
+    <form [formGroup]="signupform">
+        <div class="mb-3">
+            <label for="exampleInputPassword1">Name</label>
+            <input type="text" formControlName="name" class="form-control" id="exampleInputPassword1" placeholder="Enter your name">
+            <small *ngIf="signupform.get('name')?.invalid && signupform.get('name')?.touched"class="text-danger">name is required</small>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1">Mobile Number</label>
+            <input type="number" formControlName="mobile" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Mobile Number">
+            <small *ngIf="signupform.get('mobile')?.invalid && signupform.get('mobile')?.touched"class="text-danger">mobile number is required</small>
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small *ngIf="signupform.get('email')?.invalid && signupform.get('name')?.touched"class="text-danger">email adress is required</small>
+        </div>
+        
+        <div class="mb-3">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <small *ngIf="signupform.get('password')?.invalid && signupform.get('password')?.touched"class="text-danger">password is required</small>
+        </div>
+        
+        <button type="submit"[disabled]="signupform.invalid" class="btn btn-primary">Signup</button>
+      </form>
+      <br>
+      <a style="color:aquamarine" routerLink="/login">Are you registerd? click to Login!</a>
+</div>                
+            
+        </div>
+    </div>
+</div>
+
